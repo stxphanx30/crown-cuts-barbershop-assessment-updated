@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 60">
+<rect width="180" height="60" fill="#0b0b0b"/>
+<circle cx="30" cy="29" r="19" fill="none" stroke="#c9a45c" stroke-width="1.5"/>
+<path d="M21 25l5-7 4 5 4-5 5 7" fill="none" stroke="#c9a45c" stroke-width="2"/>
+<text x="55" y="29" fill="#fff" font-family="Georgia,serif" font-size="15">CROWN CUTS</text>
+<text x="56" y="43" fill="#c9a45c" font-family="Arial,sans-serif" font-size="7" letter-spacing="3">BARBERSHOP</text>
+</svg>
