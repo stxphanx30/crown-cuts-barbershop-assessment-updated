@@ -693,8 +693,11 @@ h3 {
 
 .map {
   min-height: 420px;
-  border-radius: 18px;
-  background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80") center/cover
+  border-radius: 2%;
+  background:
+    linear-gradient(rgba(0, 0, 0, .22),
+      rgba(0, 0, 0, .22)),
+    url("https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=2400&q=90") center/cover no-repeat;
 }
 
 .legal {
