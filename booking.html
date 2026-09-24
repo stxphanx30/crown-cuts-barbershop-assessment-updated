@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Crown Cuts premium barbershop in Cape Town. Book your appointment online.">
   <title>Book Appointment | Crown Cuts</title>
+
   <link rel="icon" href="assets/logo.svg">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,9 +44,7 @@
       <div class="container">
         <div class="eyebrow">Appointments</div>
         <h1>Book Your Appointment</h1>
-        <p class="muted">
-          Quick, easy and confirmed in minutes.
-        </p>
+        <p class="muted">Quick, easy and confirmed in minutes.</p>
       </div>
     </section>
 
@@ -53,6 +52,8 @@
     <section class="section">
 
       <div class="container">
+
+        <!-- BOOKING CONFIRMATION -->
 
         <div id="confirmation" class="success" hidden style="margin-bottom:25px">
 
@@ -77,24 +78,32 @@
 
         <div class="booking-shell">
 
+
+          <!-- BOOKING FORM -->
+
           <form id="bookingForm" class="booking-card">
+
 
             <div class="steps">
 
               <div class="step active">
-                <span>1</span>Service
+                <span>1</span>
+                Service
               </div>
 
               <div class="step active">
-                <span>2</span>Barber
+                <span>2</span>
+                Barber
               </div>
 
               <div class="step active">
-                <span>3</span>Date & Time
+                <span>3</span>
+                Date & Time
               </div>
 
               <div class="step active">
-                <span>4</span>Details
+                <span>4</span>
+                Details
               </div>
 
             </div>
@@ -102,15 +111,15 @@
 
             <div class="notice">
               Choose your service, barber, date and time.
-              Your appointment will be added to your
-              calendar after confirmation.
+              Your appointment will be added to your calendar after confirmation.
             </div>
 
+
+            <!-- SERVICE -->
 
             <h3 style="margin-bottom:14px">
               1. Select a Service
             </h3>
-
 
             <div class="option-grid">
 
@@ -170,10 +179,11 @@
             </div>
 
 
+            <!-- BARBER -->
+
             <h3 style="margin:28px 0 14px">
               2. Select a Barber
             </h3>
-
 
             <div class="option-grid">
 
@@ -206,10 +216,11 @@
             </div>
 
 
+            <!-- DATE & TIME -->
+
             <h3 style="margin:28px 0 14px">
               3. Select Date & Time
             </h3>
-
 
             <div class="calendar-grid">
 
@@ -240,10 +251,11 @@
             </div>
 
 
+            <!-- CUSTOMER DETAILS -->
+
             <h3 style="margin:28px 0 14px">
               4. Your Details
             </h3>
-
 
             <div class="form-grid">
 
@@ -282,14 +294,11 @@
             </div>
 
 
-            <!-- =================================================
-                 COUPON
-                 ================================================= -->
+            <!-- COUPON -->
 
             <h3 style="margin:28px 0 14px">
               5. Discount
             </h3>
-
 
             <div class="coupon-box" style="
                 padding:18px;
@@ -342,10 +351,55 @@
                   margin:12px 0 0;
                   font-size:.9rem;
                   font-weight:600;
-                "></p>
+                ">
+              </p>
 
             </div>
 
+            <!-- TERMS & PRIVACY CONSENT -->
+
+            <div class="terms-consent" style="
+    margin-top:20px;
+    padding:15px 16px;
+    border:1px solid rgba(201,164,92,.25);
+    border-radius:10px;
+    background:#faf9f5;
+  ">
+
+              <label for="termsAgreement" style="
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      cursor:pointer;
+      font-size:.9rem;
+      line-height:1.5;
+    ">
+
+                <input id="termsAgreement" name="termsAgreement" type="checkbox" required style="
+        margin-top:4px;
+        flex-shrink:0;
+      ">
+
+                <span>
+                  By submitting this booking, I agree to the
+                  <a href="terms.html" target="_blank" rel="noopener" style="text-decoration:underline;">
+                    Terms & Conditions
+                  </a>
+                  and understand that my personal information will be used
+                  to process and manage my appointment. Please see our
+                  <a href="privacy.html" target="_blank" rel="noopener" style="text-decoration:underline;">
+                    Privacy Policy
+                  </a>
+                  for more information.
+                </span>
+
+              </label>
+
+            </div>
+
+
+
+            <!-- CONFIRM -->
 
             <button class="btn btn-gold" type="submit" style="width:100%;margin-top:25px">
 
@@ -356,34 +410,58 @@
           </form>
 
 
+          <!-- SUMMARY -->
+
           <aside id="bookingSummary" class="summary-card">
 
             <h3>Your Appointment</h3>
 
 
             <div class="summary-line">
+
               <span>Service</span>
-              <strong id="sumService">—</strong>
+
+              <strong id="sumService">
+                —
+              </strong>
+
             </div>
 
 
             <div class="summary-line">
+
               <span>Barber</span>
-              <strong id="sumBarber">—</strong>
+
+              <strong id="sumBarber">
+                —
+              </strong>
+
             </div>
 
 
             <div class="summary-line">
+
               <span>Date</span>
-              <strong id="sumDate">—</strong>
+
+              <strong id="sumDate">
+                —
+              </strong>
+
             </div>
 
 
             <div class="summary-line">
+
               <span>Time</span>
-              <strong id="sumTime">—</strong>
+
+              <strong id="sumTime">
+                —
+              </strong>
+
             </div>
 
+
+            <!-- PRICE BEFORE DISCOUNT -->
 
             <div class="summary-line">
 
@@ -396,6 +474,8 @@
             </div>
 
 
+            <!-- DISCOUNT -->
+
             <div class="summary-line" id="discountSummaryRow" hidden>
 
               <span>Discount</span>
@@ -407,6 +487,8 @@
             </div>
 
 
+            <!-- SAVINGS -->
+
             <div class="summary-line" id="savedSummaryRow" hidden>
 
               <span>You Save</span>
@@ -417,6 +499,8 @@
 
             </div>
 
+
+            <!-- FINAL PRICE -->
 
             <div class="summary-total" id="sumPrice">
 
@@ -442,23 +526,32 @@
   </main>
 
 
+  <!-- FOOTER -->
+
   <footer class="site-footer">
 
     <div class="container">
 
       <div class="footer-grid">
 
+
         <div>
 
           <a class="logo" href="index.html">
 
-            <span class="logo-mark">♛</span>
+            <span class="logo-mark">
+              ♛
+            </span>
 
             <span class="logo-text">
 
-              <strong>CROWN CUTS</strong>
+              <strong>
+                CROWN CUTS
+              </strong>
 
-              <span>BARBERSHOP</span>
+              <span>
+                BARBERSHOP
+              </span>
 
             </span>
 
@@ -466,8 +559,7 @@
 
           <p class="muted" style="margin-top:15px">
 
-            Premium grooming for modern gentlemen
-            in Cape Town.
+            Premium grooming for modern gentlemen in Cape Town.
 
           </p>
 
@@ -497,7 +589,9 @@
             <a href="terms.html">
               Terms & Conditions
             </a>
-
+            <a href="privacy.html">
+              Privacy Policy
+            </a>
           </div>
 
         </div>
@@ -558,8 +652,7 @@
       <div class="footer-bottom">
 
         <span>
-          © 2026 Crown Cuts Barbershop.
-          All rights reserved.
+          © 2026 Crown Cuts Barbershop. All rights reserved.
         </span>
 
         <span>
@@ -573,40 +666,31 @@
   </footer>
 
 
-  <!-- =====================================================
-       FIRST VISIT 10% POPUP
-       ===================================================== -->
+  <!-- FIRST VISIT 10% POPUP -->
 
   <div id="promoModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
 
     <div class="modal">
 
       <button class="modal-close" data-modal-close aria-label="Close">
-
         ×
-
       </button>
-
 
       <div class="eyebrow">
         First Visit
       </div>
 
-
       <h2 id="promoTitle">
         Get 10% Off
       </h2>
 
-
       <p>
-        Join our grooming list and receive
-        10% off your first appointment.
+        Join our grooming list and receive 10% off your first appointment.
       </p>
-
 
       <form id="promoForm" class="field">
 
-        <input type="email" placeholder="Your email address" required>
+        <input id="promoEmail" type="email" placeholder="Your email address" required>
 
         <button class="btn btn-gold" type="submit">
 
@@ -621,15 +705,15 @@
   </div>
 
 
-  <!-- =====================================================
-       IMPORTANT:
-       EMAILJS MUST LOAD BEFORE MAIN.JS
-       ===================================================== -->
+  <!-- EMAILJS -->
 
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- MAIN JAVASCRIPT -->
 
   <script src="js/main.js"></script>
+
+  <!-- BOOKING JAVASCRIPT -->
 
   <script src="js/booking.js"></script>
 
